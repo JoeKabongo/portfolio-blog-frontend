@@ -1,0 +1,46 @@
+/* Style for the intro section with my picture and little word*/
+#intro-section  {
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div {
+  display: block;
+}
+
+
+
+
+#image-div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+ #image-div img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+#content-div a {
+  font-weight: bold;
+  color: #5bb1cd;
+}
+#content-div a:hover {
+  color: #000000;
+}
+
+
+
+.view-all-link{
+  padding: 5px ;
+  border: 1px solid #ebebeb;
+  color: #5bb1cd;
+
+}
+
+.view-all-link:hover{
+  background-color:#ebebeb;
+}

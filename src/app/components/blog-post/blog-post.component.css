@@ -1,0 +1,25 @@
+img{
+  height: 100px;
+}
+
+td{
+ padding: 10px;
+}
+
+#date {
+  color: #808080;
+  font-size: small;
+  font-weight: normal;
+}
+
+
+.post-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@media(max-width: 700px){
+  .post-title{
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+<h3> New Project</h3>
+
+<form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm.value)" >
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" name='title' id="title" placeholder="Title"  ngModel>
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input
+        type="file" class="form-control"
+        name='image' id="image" placeholder="image" accept="image/*"
+        (change)="onFileChanged($event)" >
+  </div>
+
+  <div class="form-group">
+    <label for="blurb">Blurb</label>
+    <input type="text" class="form-control" name='blurb' id="blurb" placeholder="Blurb"   ngModel>
+  </div>
+
+  <div class="form-group">
+    <label for="description"> Description</label>
+    <textarea
+      type="text" class="form-control" id="description"
+      name='description' placeholder="Description"   ngModel>
+    </textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="technologies">Technologies</label>
+    <input
+      type="text" class="form-control" name="technologies"
+      id="technologies" placeholder="Technologies"  ngModel>
+  </div>
+
+  <div class="form-group">
+    <label for="link">Project link</label>
+    <input type="text" class="form-control" name="projectLink" id="link" placeholder="Project link" ngModel>
+  </div>
+
+  <div class="form-group">
+    <label for="githubLink">Github link</label>
+    <input type="text" class="form-control" name="githubLink" id="githubLink" placeholder="Github link" ngModel>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

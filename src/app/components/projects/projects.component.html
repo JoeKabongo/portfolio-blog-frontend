@@ -1,0 +1,45 @@
+<h2> Projects</h2>
+
+<section>
+  <!-- <div class="container">
+      <div class="project"  *ngFor="let project of allProjects">
+        <img *ngIf="project.imageLink" [src]="project.imageLink" alt="so">
+        <div class="project-section title">
+          {{project.title}}
+        </div>
+
+        <div class="project-section description">
+           {{project.description}}
+        </div>
+
+        <div class="project-section technologies">
+            <b> Technologies used: </b> {{project.technologies}}
+        </div>
+
+        <div class="project-section links">
+          <a href="{{project.projectLink}}" *ngIf="project.projectLink" target="_blank"> View project</a>
+          <a href="{{project.githubLink}}" *ngIf="project.githubLink" target="_blank"> Github </a>
+        </div>
+      </div>
+  </div>  -->
+
+  <div class="container">
+    <div *ngFor="let project of allProjects" class="project" >
+        <img class="project-image" [src]="project.imageLink" alt="so">
+        <div class="title">
+            <p> {{project.title}} </p>
+        </div>
+        <div class="blurb">
+          <p> {{project.blurb}} </p>
+        </div>
+        <div class="links">
+          <a href="{{project.projectLink}}" *ngIf="project.projectLink" target="_blank"> View project</a>
+          <a href="{{project.githubLink}}" *ngIf="project.githubLink" target="_blank"> Github </a>
+        </div>
+
+    </div>
+
+  </div>
+
+
+</section>

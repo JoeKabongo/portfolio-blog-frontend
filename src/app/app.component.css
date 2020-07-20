@@ -1,0 +1,112 @@
+main {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+@media(max-width: 700px){
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+
+@media(max-width: 500px){
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+#finish-tracker{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 5px solid blue;
+  z-index: 1000;
+}
+
+footer{
+  text-align: center;
+  width: 100%;
+  font-size: small;
+  margin: 30px 0px 30px 0px;
+}
+
+/* dark background for pop up window */
+#black-background{
+  position: fixed;
+  display: none;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  z-index: 2;
+
+}
+/* project window*/
+#project-window{
+  position: fixed;
+  display: none;
+  top: 50px;
+  left: 20%;
+  right: 20%;
+  width: 60%;
+  /* height: 600px; */
+  background-color: #ffffff;
+  z-index: 1000;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  border-radius: 10px;
+}
+
+#project-window .image {
+  height: 300px;
+  /* border-bottom: 2px solid #5bb1cd; */
+
+}
+
+#project-window .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+
+#project-window  .container{
+  padding: 30px 20px 20px 20px;
+}
+
+#project-window .container  div{
+  margin-bottom: 20px;
+}
+
+#project-window .title {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* #project-window .links{
+  display: flex;
+  align-items: center ;
+} */
+
+#project-window a {
+  padding: 10px;
+  border: 1px solid #ebebeb;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#project-window a:hover {
+ background-color : #5bb1cd ;
+}
+
+#project-window .link{
+  margin-left: auto;
+}
