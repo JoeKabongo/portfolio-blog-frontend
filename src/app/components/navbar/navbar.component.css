@@ -22,22 +22,10 @@ a {
 
 
 
-@media (max-width: 800px){
-
-  #navbar {
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #ebebeb;
-    /* background-color: red; */
-  }
+ @media (max-width: 800px){
 
   a {
-    display: inline;
-    margin: 10px;
+    margin: 5px;
   }
 
 }
